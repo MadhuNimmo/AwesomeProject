@@ -96,6 +96,7 @@ function App(): JSX.Element {
   // A function to increment the count
   const incrementCount = () => {
     setCount(count + 1);
+    
   };
   const randomChar = getRandomCharacter();
 
@@ -131,6 +132,7 @@ function App(): JSX.Element {
           <Section title="Custom Function 5">
             {f5()}
           </Section>
+          <Text>Count: {count}</Text>
           <Button title="Increment" onPress={incrementCount} />
           <LearnMoreLinks />
         </View>
